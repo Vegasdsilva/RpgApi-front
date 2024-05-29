@@ -34,3 +34,9 @@ D:\2DS Matheus e Erickson\DS\RpgMvc\obj\Debug\net8.0\refint\RpgMvc.dll
 D:\2DS Matheus e Erickson\DS\RpgMvc\obj\Debug\net8.0\RpgMvc.pdb
 D:\2DS Matheus e Erickson\DS\RpgMvc\obj\Debug\net8.0\RpgMvc.genruntimeconfig.cache
 D:\2DS Matheus e Erickson\DS\RpgMvc\obj\Debug\net8.0\ref\RpgMvc.dll
+D:\2DS Matheus e Erickson\DS\RpgMvc\obj\Debug\net8.0\RpgMvc.sourcelink.json
+D:\2DS Matheus e Erickson\DS\RpgMvc\bin\Debug\net8.0\publish\web.config
+D:\2DS Matheus e Erickson\DS\RpgMvc\bin\Debug\net8.0\publish\appsettings.Development.json
+D:\2DS Matheus e Erickson\DS\RpgMvc\bin\Debug\net8.0\publish\appsettings.json
+D:\2DS Matheus e Erickson\DS\RpgMvc\bin\Debug\net8.0\publish\RpgMvc.deps.json
+D:\2DS Matheus e Erickson\DS\RpgMvc\bin\Debug\net8.0\publish\RpgMvc.runtimeconfig.json

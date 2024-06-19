@@ -13,7 +13,7 @@ namespace RpgMvc.Controllers
 {
     public class DisputasController : Controller
     {
-        public string uriBase = "http://ericksonvegas.somee.com/RpgApi/Disputas/";
+        public string uriBase = "http://luizsouza.somee.com/RpgApi/Disputas/";
 
         [HttpGet]
         public async Task<ActionResult> IndexAsync()
@@ -24,7 +24,7 @@ namespace RpgMvc.Controllers
                 string token = HttpContext.Session.GetString("SessionTokenUsuario");
                 httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
 
-                string uriBuscaPersonagens = "http://ericksonvegas.somee.com/RpgApi/Personagens/GetAll";
+                string uriBuscaPersonagens = "http://luizsouza.somee.com/RpgApi/Personagens/GetAll";
                 HttpResponseMessage response = await httpClient.GetAsync(uriBuscaPersonagens);
                 string serialized = await response.Content.ReadAsStringAsync();
 
@@ -86,7 +86,7 @@ namespace RpgMvc.Controllers
                 string token = HttpContext.Session.GetString("SessionTokenUsuario");
                 httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
 
-                string uriBuscaPersonagens = "http://ericksonvegas.somee.com/RpgApi/Personagens/GetAll";
+                string uriBuscaPersonagens = "http://luizsouza.somee.com/RpgApi/Personagens/GetAll";
                 HttpResponseMessage response = await httpClient.GetAsync(uriBuscaPersonagens);
                 string serialized = await response.Content.ReadAsStringAsync();
 
@@ -101,7 +101,7 @@ namespace RpgMvc.Controllers
                 else
                     throw new System.Exception(serialized);
                 
-                string uriBuscaHabilidades = "http://ericksonvegas.somee.com/RpgApi/PersonagemHabilidades/GetHabilidades";
+                string uriBuscaHabilidades = "http://luizsouza.somee.com/RpgApi/PersonagemHabilidades/GetHabilidades";
                 response = await httpClient.GetAsync(uriBuscaHabilidades);
                 serialized = await response.Content.ReadAsStringAsync();
 
@@ -150,7 +150,7 @@ namespace RpgMvc.Controllers
             catch (System.Exception ex)
             {
                 TempData["MensagemErro"] = ex.Message;
-                return RedirectToAction("Index");
+                return RedirectToAction("IndexHabilidades");
             }
         }
     }
